@@ -6,6 +6,7 @@ import Root from "routes/_root";
 import ErrorPage from "./error-page";
 import Photography from "routes/photography/photography";
 import Viscera from "routes/photography/viscera";
+import Ttc1 from "routes/photography/ttc1";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "photo/viscera",
         element: <Viscera />,
+      },
+      {
+        path: "photo/ttc1",
+        element: <Ttc1 />,
       },
     ],
   },
