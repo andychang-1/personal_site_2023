@@ -1,0 +1,73 @@
+@font-face {
+  font-family: adasdasd;
+  src: url(../assets/Inconsolata_Regular.ttf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: adasdasd;
+  overflow: hidden;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#rightbar {
+  width: 25%;
+
+  flex-direction: column;
+  position: sticky;
+  top: 20px;
+  left: 20px;
+}
+
+#namebar {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  overflow: auto;
+}
+
+#subcontent {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+#subcontent b {
+  display: flex;
+  font-size: 30px;
+  align-items: space-around;
+}
+
+#gallery {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: space-around;
+  gap: 20px 5%;
+}
+
+#gallery img {
+  display: flex;
+  width: 30%;
+}
