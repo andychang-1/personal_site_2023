@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "react-router-dom": "^6.16.0",
-    "styled-components": "^5.3.10",
-    "start": "react-scripts --openssl-legacy-provider start"
+    "styled-components": "^5.3.10"
   }
 }
