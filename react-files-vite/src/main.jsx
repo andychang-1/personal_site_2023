@@ -15,13 +15,16 @@ import Photobook from "./routes/photography/photobook";
 
 import Constants from "./constants";
 
+const allMappings = Constants.PHOTO_SECTION_MAPPING.concat(
+  Constants.FURNITURE_SECTION_MAPPING
+).concat(Constants.CLOTHES_SECTION_MAPPING);
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-
-    children: Constants.PHOTO_SECTION_MAPPING.map((obj) => {
+    children: allMappings.map((obj) => {
       return { path: obj.path, element: obj.comp };
     }),
   },

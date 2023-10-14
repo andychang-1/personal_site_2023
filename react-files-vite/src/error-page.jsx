@@ -9,9 +9,14 @@ export default function ErrorPage(): React.Node {
   console.error(error);
 
   return (
-    <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-    </div>
+    <>
+      <div id="rightbar">
+        <div id="namebar">
+          <a href={`/`}>Andy Changs site</a>
+        </div>
+        <h1>Oops!</h1>
+        <p>Sorry, an unexpected error has occurred.</p>
+      </div>
+    </>
   );
 }

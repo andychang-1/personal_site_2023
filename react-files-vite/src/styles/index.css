@@ -49,7 +49,7 @@ body {
   display: flex;
   margin-top: 20px;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   gap: 10px;
 }
 
@@ -64,15 +64,17 @@ body {
   flex-flow: row wrap;
   align-items: center;
   align-content: space-around;
-  gap: 20px 5%;
+  gap: 10px;
 }
 
 #gallery a {
+  aspect-ratio: 1/1;
   display: flex;
   width: 30%;
 }
 
 #gallery a img {
+  object-fit: contain;
   display: flex;
   width: 100%;
 }

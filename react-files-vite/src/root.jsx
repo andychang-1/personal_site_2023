@@ -9,25 +9,9 @@ const nameBar = (
   </div>
 );
 
-export const furnitureSection = (
-  <>
-    <b>(2) furniture</b>
-    <ul>
-      <li>
-        <a href={`/furniture/shelves`}>cado / frama shelves - 2021 </a>
-      </li>
-      <li>
-        <a href={`/furniture/stoops`}>stoops - 2021- </a>
-      </li>
-    </ul>
-  </>
-);
+export const resume = <b>resume</b>;
 
-export const clothes = <b> clothes</b>;
-
-export const resume = <b> resume</b>;
-
-export const socials = <b> socials + contact</b>;
+export const socials = <b>socials + contact</b>;
 
 export default function Root() {
   return (
@@ -41,8 +25,18 @@ export default function Root() {
               Constants.PHOTO_SECTION_MAPPING
             )}
           </li>
-          <li>{furnitureSection}</li>
-          <li>{clothes}</li>
+          <li>
+            {generateSubSection(
+              "(2) furniture",
+              Constants.FURNITURE_SECTION_MAPPING
+            )}
+          </li>
+          <li>
+            {generateSubSection(
+              "(3) clothes",
+              Constants.CLOTHES_SECTION_MAPPING
+            )}
+          </li>
           <li>{resume}</li>
           <li>{socials}</li>
         </ul>

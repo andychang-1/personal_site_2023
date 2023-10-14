@@ -3,8 +3,8 @@ import Ttc1 from "routes/photography/ttc1";
 import Ttc2 from "routes/photography/ttc2";
 import Ttc3 from "routes/photography/ttc3";
 import TwinksVsDolls from "routes/photography/twinksVsDolls";
-import Viscera from "./routes/photography/viscera";
-
+import Viscera from "routes/photography/viscera";
+import CadoShelves from "routes/furniture/cadoshelves";
 const Constants = {
   PHOTO_SECTION_MAPPING: [
     {
@@ -45,9 +45,26 @@ const Constants = {
   ],
   FURNITURE_SECTION_MAPPING: [
     {
-      path: "photo/viscera",
-      comp: <Viscera />,
-      title: "Viscera - 08/23",
+      path: "furniture/shelves",
+      comp: <CadoShelves />,
+      title: "cado / frama shelves - 2021",
+    },
+    {
+      path: "furniture/stoops",
+      comp: null,
+      title: "stoops - 2021-",
+    },
+  ],
+  CLOTHES_SECTION_MAPPING: [
+    {
+      path: "clothes/fryeboots1",
+      comp: null,
+      title: "Frye boots I - 2023",
+    },
+    {
+      path: "clothes/",
+      comp: null,
+      title: "placeholder",
     },
   ],
 };

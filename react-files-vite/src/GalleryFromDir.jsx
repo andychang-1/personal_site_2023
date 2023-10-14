@@ -13,7 +13,7 @@ export default function GalleryFromDir(props: Props): React.Node {
 
 function imageFromSource(src: string): React.Node {
   return (
-    <a href={src}>
+    <a key={src} href={src}>
       <img key={src} src={src} />
     </a>
   );
