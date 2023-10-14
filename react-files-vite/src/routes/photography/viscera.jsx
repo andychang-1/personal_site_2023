@@ -1,11 +1,13 @@
 // @flow
-import GalleryFromDir from "../../GalleryFromDir.jsx";
 
 import * as React from "react";
+import GalleryFromDir from "../../GalleryFromDir.jsx";
 
+// $FlowExpectedError[not-a-function]
 const _photos35mm = import.meta.glob(
   "/src/assets/photography/viscera/35mm/*.jpg"
 );
+// $FlowExpectedError[not-a-function]
 const _photosInstax = import.meta.glob(
   "/src/assets/photography/viscera/instax/*.jpg"
 );
