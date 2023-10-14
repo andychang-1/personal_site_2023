@@ -3,7 +3,7 @@ import GalleryFromDir from "../../GalleryFromDir.jsx";
 
 import * as React from "react";
 
-const _photos = import.meta.glob("/assets/furniture/shelves/*.jpg");
+const _photos = import.meta.glob("/assets/furniture/shelves/*");
 
 export default function CadoShelves(): React.Node {
   const photos = Object.keys(_photos);

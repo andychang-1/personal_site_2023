@@ -5,12 +5,12 @@ import GalleryFromDir from "GalleryFromDir";
 
 const photos35mm = Object.keys(
   // $FlowExpectedError[not-a-function]
-  import.meta.glob("/assets/photography/ttc3/35mm/*.jpg")
+  import.meta.glob("/assets/photography/ttc3/35mm/*")
 );
 
 const photosInstax = Object.keys(
   // $FlowExpectedError[not-a-function]
-  import.meta.glob("/assets/photography/ttc3/instax/*.jpg")
+  import.meta.glob("/assets/photography/ttc3/instax/*")
 );
 
 export default function Ttc3(): React.Node {

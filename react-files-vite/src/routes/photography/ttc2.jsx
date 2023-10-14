@@ -5,12 +5,12 @@ import * as React from "react";
 
 const photos35mm = Object.keys(
   // $FlowExpectedError[not-a-function]
-  import.meta.glob("/assets/photography/ttc2/35mm/*.jpg")
+  import.meta.glob("/assets/photography/ttc2/35mm/*")
 );
 
 const photosInstax = Object.keys(
   // $FlowExpectedError[not-a-function]
-  import.meta.glob("/assets/photography/ttc2/instax/*.jpg")
+  import.meta.glob("/assets/photography/ttc2/instax/*")
 );
 
 export default function Ttc2(): React.Node {

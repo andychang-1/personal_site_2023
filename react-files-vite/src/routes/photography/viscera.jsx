@@ -4,11 +4,9 @@ import * as React from "react";
 import GalleryFromDir from "GalleryFromDir";
 
 // $FlowExpectedError[not-a-function]
-const _photos35mm = import.meta.glob("/assets/photography/viscera/35mm/*.jpg");
+const _photos35mm = import.meta.glob("/assets/photography/viscera/35mm/*");
 // $FlowExpectedError[not-a-function]
-const _photosInstax = import.meta.glob(
-  "/assets/photography/viscera/instax/*.jpg"
-);
+const _photosInstax = import.meta.glob("/assets/photography/viscera/instax/*");
 
 export default function Viscera(): React.Node {
   const photos35mm = Object.keys(_photos35mm);
