@@ -1,13 +1,29 @@
 // @flow
 import * as React from "react";
 
-import Photobook from "routes/photography/photobook";
-import Ttc1 from "routes/photography/ttc1";
-import Ttc2 from "routes/photography/ttc2";
-import Ttc3 from "routes/photography/ttc3";
-import TwinksVsDolls from "routes/photography/twinksVsDolls";
-import Viscera from "routes/photography/viscera";
-import CadoShelves from "routes/furniture/cadoshelves";
+import {
+  Viscera,
+  TwinksVsDolls,
+  Ttc1,
+  Ttc2,
+  Ttc3,
+  Photobook,
+} from "routes/photography";
+
+import {
+  CadoShelves,
+  JpToolbox,
+  BigFrame,
+  BroomHanger,
+  DoorHangerBracket,
+  DraftingTable,
+  HatRack,
+  HeadBoard2,
+  Stoops,
+  Poster,
+  Etc,
+} from "routes/furniture";
+import { FryeBoots } from "routes/clothing.jsx";
 
 type mapEntry = {
   comp: ?React.Node,
@@ -55,26 +71,69 @@ const Constants: { [string]: Array<mapEntry> } = {
   ],
   FURNITURE_SECTION_MAPPING: [
     {
-      path: "furniture/shelves",
-      comp: <CadoShelves />,
-      title: "cado / frama shelves - 2021",
+      path: "furniture/bigframe",
+      comp: <BigFrame />,
+      title: "Big picture frame - 2023",
     },
     {
-      path: "furniture/stoops",
-      comp: null,
-      title: "stoops - 2021-",
+      path: "furniture/shelves",
+      comp: <BroomHanger />,
+      title: "Broomhanger - 2023",
+    },
+    {
+      path: "furniture/doorhangerbracket",
+      comp: <DoorHangerBracket />,
+      title: "Door Hanger Bracket - 2023",
+    },
+    {
+      path: "furniture/hatrack",
+      comp: <HatRack />,
+      title: "Hat Rack - 2023",
+    },
+    {
+      path: "furniture/poster",
+      comp: <Poster />,
+      title: "Poster - 2023",
+    },
+    {
+      path: "furniture/draftingtable",
+      comp: <DraftingTable />,
+      title: "Drafting Table - 2021",
+    },
+    {
+      path: "furniture/headboard2",
+      comp: <HeadBoard2 />,
+      title: "Headboard II - 2021",
+    },
+
+    {
+      path: "furniture/jptoolbox",
+      comp: <JpToolbox />,
+      title: "Japanese woodworking toolbox - 2019",
+    },
+    {
+      path: "furniture/etc",
+      comp: <Etc />,
+      title: "etcetera projects",
     },
   ],
   CLOTHES_SECTION_MAPPING: [
     {
       path: "clothes/fryeboots1",
-      comp: null,
+      comp: <FryeBoots />,
       title: "Frye boots I - 2023",
     },
     {
-      path: "clothes/",
+      path: "clothes/perfumecase",
       comp: null,
-      title: "placeholder",
+      title: "Perfume Case - 2023",
+    },
+  ],
+  MISC_SECTION_MAPPING: [
+    {
+      path: "misc/sukireupholster",
+      comp: <FryeBoots />,
+      title: "Reupholstering Motorcycle Seat - 2022",
     },
   ],
 };

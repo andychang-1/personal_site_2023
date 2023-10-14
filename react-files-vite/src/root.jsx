@@ -41,7 +41,7 @@ export default function Root() {
           <li>{socials}</li>
         </ul>
       </div>
-      <div class="content">
+      <div id="content">
         <Outlet />
       </div>
     </>
