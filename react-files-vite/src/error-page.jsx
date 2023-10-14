@@ -1,8 +1,10 @@
-import React from "react";
-import { useRouteError } from "react-router-dom";
-import Root from "./routes/_root";
+// @flow
+import * as React from "react";
 
-export default function ErrorPage() {
+import { useRouteError } from "react-router-dom";
+import Root from "./routes/root";
+
+export default function ErrorPage(): React.Node {
   const error = useRouteError();
   console.error(error);
 

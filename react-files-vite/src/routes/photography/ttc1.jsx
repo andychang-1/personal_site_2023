@@ -1,20 +1,24 @@
+// @flow
+import * as React from "react";
+
 import GalleryFromDir from "GalleryFromDir";
-import React from "react";
 
-// @ts-ignore
-const _photos = import.meta.glob("/src/assets/photography/ttc1/*.jpg");
+const photos35mm = Object.keys(
+  import.meta.glob("/src/assets/photography/ttc1/35mm/*.jpg")
+);
 
-export default function Ttc1() {
-  const photos = Object.keys(_photos);
-  console.log(photos);
+const photosInstax = Object.keys(
+  import.meta.glob("/src/assets/photography/ttc1/instax/*.jpg")
+);
+
+export default function Ttc1(): React.Node {
   return (
     <div id="subcontent">
-      <b>Viscera</b>A fashion show organized by Emile Osbourne and Vena Cava. I
-      photographed it on 35mm film (Canon Elan 7) and Instax wide (Mint RF70)
+      <b>Things to Come I - March 16 2023</b>
       <b>35mm</b>
-      <GalleryFromDir photos={photos} />
+      <GalleryFromDir photos={photos35mm} />
       <b>Instax wide</b>
-      <div id="gallery"></div>
+      <GalleryFromDir photos={photosInstax} />
     </div>
   );
 }

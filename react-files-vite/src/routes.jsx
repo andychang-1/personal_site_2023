@@ -11,10 +11,10 @@ export const photoSection = (
         <a href={`/photo/ttc3`}>Things to Come III - 07/2023 </a>
       </li>
       <li>
-        <a href={`/photo/ttc2`}>Things to Come II - ?/2023 </a>
+        <a href={`/photo/ttc2`}>Things to Come II - 05/2023 </a>
       </li>
       <li>
-        <a href={`/photo/ttc1`}>Things to Come I - ?/2023 </a>
+        <a href={`/photo/ttc1`}>Things to Come I - 03/2023 </a>
       </li>
       <li>
         <a href={`/photo/twinks_vs_dolls_2`}>Twinks vs Dolls II - 06/2023 </a>

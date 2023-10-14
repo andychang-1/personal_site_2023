@@ -1,5 +1,5 @@
 @font-face {
-  font-family: adasdasd;
+  font-family: inconsolata;
   src: url(../assets/Inconsolata_Regular.ttf);
 }
 
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: adasdasd;
+  font-family: inconsolata;
   overflow: hidden;
   background-color: whitesmoke;
   margin: 0;
@@ -25,7 +25,7 @@ body {
 
 #rightbar {
   width: 25%;
-
+  height: 50%;
   flex-direction: column;
   position: sticky;
   top: 20px;
@@ -67,7 +67,12 @@ body {
   gap: 20px 5%;
 }
 
-#gallery img {
+#gallery a {
   display: flex;
   width: 30%;
+}
+
+#gallery a img {
+  display: flex;
+  width: 100%;
 }
