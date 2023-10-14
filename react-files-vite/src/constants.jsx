@@ -1,3 +1,6 @@
+// @flow
+import * as React from "react";
+
 import Photobook from "routes/photography/photobook";
 import Ttc1 from "routes/photography/ttc1";
 import Ttc2 from "routes/photography/ttc2";
@@ -5,7 +8,14 @@ import Ttc3 from "routes/photography/ttc3";
 import TwinksVsDolls from "routes/photography/twinksVsDolls";
 import Viscera from "routes/photography/viscera";
 import CadoShelves from "routes/furniture/cadoshelves";
-const Constants = {
+
+type mapEntry = {
+  comp: ?React.Node,
+  path: string,
+  title: string,
+};
+
+const Constants: { [string]: Array<mapEntry> } = {
   PHOTO_SECTION_MAPPING: [
     {
       path: "photo/viscera",
@@ -68,4 +78,5 @@ const Constants = {
     },
   ],
 };
+
 export default Constants;

@@ -4,10 +4,12 @@ import * as React from "react";
 import GalleryFromDir from "GalleryFromDir";
 
 const photos35mm = Object.keys(
+  // $FlowExpectedError[not-a-function]
   import.meta.glob("/src/assets/photography/ttc3/35mm/*.jpg")
 );
 
 const photosInstax = Object.keys(
+  // $FlowExpectedError[not-a-function]
   import.meta.glob("/src/assets/photography/ttc3/instax/*.jpg")
 );
 

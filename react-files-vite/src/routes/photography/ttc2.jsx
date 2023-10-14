@@ -3,14 +3,13 @@ import GalleryFromDir from "GalleryFromDir.jsx";
 
 import * as React from "react";
 
-
 const photos35mm = Object.keys(
   // $FlowExpectedError[not-a-function]
   import.meta.glob("/src/assets/photography/ttc2/35mm/*.jpg")
 );
 
 const photosInstax = Object.keys(
-    // $FlowExpectedError[not-a-function]
+  // $FlowExpectedError[not-a-function]
   import.meta.glob("/src/assets/photography/ttc2/instax/*.jpg")
 );
 
