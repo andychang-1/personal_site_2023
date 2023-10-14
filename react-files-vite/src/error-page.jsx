@@ -2,7 +2,6 @@
 import * as React from "react";
 
 import { useRouteError } from "react-router-dom";
-import Root from "./root";
 
 export default function ErrorPage(): React.Node {
   const error = useRouteError();
