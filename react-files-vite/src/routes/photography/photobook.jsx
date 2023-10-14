@@ -3,18 +3,14 @@ import GalleryFromDir from "../../GalleryFromDir.jsx";
 
 import * as React from "react";
 
-const _photos = import.meta.glob(
-  "/src/assets/photography/photobook2021/35mm/*.jpg"
-);
+const _photos = import.meta.glob("/src/assets/photography/photobook2020/*.jpg");
 
 export default function Photobook(): React.Node {
   const photos = Object.keys(_photos);
   return (
     <div id="subcontent">
-      <b>Viscera</b>I put together a book of pictures I took until 2021. Across
-      <b>35mm</b>
-      <GalleryFromDir photos={photos35mm} />
-      <b>Instax wide</b>
+      <b>book</b>I put together a book of pictures I took between 2019 and 2020
+      <GalleryFromDir photos={photos} />
     </div>
   );
 }
