@@ -4,7 +4,7 @@ import * as React from "react";
 import GalleryFromDir from "GalleryFromDir";
 
 const photos35mm = Object.keys(
-  import.meta.glob("/src/assets/photography/twinksvsdolls/*.jpg")
+  import.meta.glob("/assets/photography/twinksvsdolls/*.jpg")
 );
 
 export default function TwinksVsDolls(): React.Node {

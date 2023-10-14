@@ -4,7 +4,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./styles/index.css";
-import Root from "./root";
+import Root from "root";
 import ErrorPage from "./error-page";
 import Viscera from "./routes/photography/viscera";
 import Ttc1 from "./routes/photography/ttc1";

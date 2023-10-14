@@ -31,6 +31,7 @@
     "flow-bin": "^0.218.1",
     "vite": "^4.4.5",
     "vite-plugin-require-transform": "^1.0.21",
+    "vite-plugin-static-copy": "^0.17.0",
     "vite-require": "^0.2.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",

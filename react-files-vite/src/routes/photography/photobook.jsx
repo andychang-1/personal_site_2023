@@ -3,7 +3,7 @@ import GalleryFromDir from "../../GalleryFromDir.jsx";
 
 import * as React from "react";
 // $FlowExpectedError[not-a-function]
-const _photos = import.meta.glob("/src/assets/photography/photobook2020/*.jpg");
+const _photos = import.meta.glob("/assets/photography/photobook2020/*.jpg");
 
 export default function Photobook(): React.Node {
   const photos = Object.keys(_photos);
