@@ -128,6 +128,26 @@ const Constants: { [string]: Array<mapEntry> } = {
       comp: null,
       title: "Perfume Case - 2023",
     },
+    {
+      path: "clothes/gimpmask",
+      comp: null,
+      title: "Gimp Mask - 2022",
+    },
+    {
+      path: "clothes/converse",
+      comp: null,
+      title: "Fidlock Converse - 2022",
+    },
+    {
+      path: "clothes/justhood",
+      comp: null,
+      title: "Just Hood - 2019",
+    },
+    {
+      path: "clothes/airpodscase",
+      comp: null,
+      title: "Airpods Case - 2019",
+    },
   ],
   MISC_SECTION_MAPPING: [
     {
